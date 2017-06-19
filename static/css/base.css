@@ -30,7 +30,7 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline;}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -51,13 +51,15 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
+		background-color: rgba(50, 50, 100, 0.1);
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
 
+ 	.bullet { margin-left:10px; margin-right:10px; }
+ 	/* .bullet > li { height: 10px } Caused problems when minimized. */
 
 /* #Typography
 ================================================== */
@@ -94,9 +96,11 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	/* a, a:visited { color: #333; text-decoration: underline; outline: 0; background-color: rgba(50, 50, 100, .0);}
 	a:hover, a:focus { color: #000; }
-	p a, p a:visited { line-height: inherit; }
+	p a, p a:visited { line-height: inherit; } */
+
+	a:link, p a, header a {color: #B11D1D; background-color: transparent;}
 
 
 /* #Lists
@@ -259,6 +263,85 @@
 		font-weight: normal;
 		font-size: 13px;
 		color: #444; }
+
+/* Navbar... imported from sustain
+-------------------------------------------------- */
+.nav-container {
+	width: auto;
+	text-align: left;
+}
+
+.nav-container .text-muted {
+  margin: 18px 0;
+}
+.nav-container a {
+  color: #B11D1D;
+}
+.navbar-brand {
+    transform: translateY(-12%);
+}
+
+.navbar-static-top {
+  margin-bottom: 10px;
+}
+.navbar-default {
+  background-color: rgba(50, 50, 100, 0.1);
+  border: 0;
+ }
+.navbar-default .navbar-brand {
+  color: #886B6B;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #886B6B;
+}
+.navbar-default .navbar-text {
+  color: #886B6B;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #886B6B;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #886B6B;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #886B6B;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #886B6B;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #886B6B;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #886B6B;
+}
+.navbar-default .navbar-link {
+  color: #886B6B;
+}
+.navbar-default .navbar-link:hover {
+  color: #886B6B;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #886B6B;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #886B6B;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #886B6B;
+    background-color: #ffffff;
+  }
+}
 
 /* #Misc
 ================================================== */

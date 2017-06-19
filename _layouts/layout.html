@@ -22,11 +22,14 @@
     <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
     <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
 </head>
+
+{% include header.html %}
+
 <body>
 <div class="container">
     <header class="three columns">
-        <img src="{{ site.baseurl }}static/img/fabio.png" class="me">
-        <h1>{{ site.name }}</h1>
+        <img src="{{ site.baseurl }}static/img/profile.png" class="me">
+        <h2>{{ site.name }}</h2>
         <p>
             <a href="{{ site.tel_full }}">{{ site.tel }}</a>
         </p>
@@ -37,13 +40,13 @@
                 {{ site.country }}
             </a>
         </address>
-        <p>
+        <!-- <p>
             <a href="http://{{ site.website }}">{{ site.website }}</a><br/>
-        </p>
+        </p> Website link is removed. -->
         <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
-            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="{{ site.email_full }}">{{ site.email }}</a><br/><br/>
+            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> <!-- /
+            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> Twitter</a> -->
         </p>
     </header>
     <div class="thirteen columns clearfix">
@@ -51,8 +54,7 @@
         {{ content }}
 
     <footer class="thirteen columns">
-        <p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
-            <a href="https://www.github.com/biomadeira/vitae">vitae</a> with ♥</p>
+        <p class="text-muted">© All rights reserved. Many thanks to <a href="https://pages.github.com">GitHub Pages</a>, <a href="http://jekyllrb.com/">Jekyll</a>, and <a href="http://www.github.com/biomadeira/sustain">Sustain</a>. </p>
     </footer>
     </div>
 </div>

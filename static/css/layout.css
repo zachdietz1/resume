@@ -5,12 +5,12 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: rgb(48, 48, 48);
-    border-top: 5px solid #1E90FF;
-    border-bottom: 5px solid #1E90FF;
+    border-top: 6px solid #B11D1D;
+    border-bottom: 8px solid #B11D1D;
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 0px; /* Was 50px... changed for navbar */
 }
 
 a {
@@ -25,7 +25,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-    color: #1E90FF;
+    color: #B11D1D;
 }
 
 p, address {
@@ -42,7 +42,7 @@ p, address {
 }
 
 header > h1, section > h1 {
-    color: #1E90FF;
+    color: #B11D1D;
 }
 
 header > h1 {
@@ -82,11 +82,11 @@ article > header > h1 {
 }
 
 article > header > span + span {
-    margin-left: 2px;
+    margin-left: -2px;
 }
 
 article > header > span + span::before {
-    content: '@';
+    content: ', ';
     margin-right: 4px;
 }
 
