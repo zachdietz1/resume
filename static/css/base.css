@@ -273,7 +273,7 @@
 .nav_button {
 	display: inline-block;
 	margin-right: 40px;
-	transform: translateY(-130%);
+	transform: translateY(-118%);
 }
 
 .navbar-brand {
@@ -282,6 +282,10 @@
 
 .navbar-right {
 	margin-right: 30px;
+}
+
+.home-button > a > i {
+	transform: translateY(12%);
 }
 
 .navbar-static-top {
