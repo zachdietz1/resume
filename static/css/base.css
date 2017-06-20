@@ -264,21 +264,24 @@
 		font-size: 13px;
 		color: #444; }
 
-/* Navbar... imported from sustain
+/* Navbar... imported from sustain (My changes on top)
 -------------------------------------------------- */
 .nav-container {
-	width: auto;
-	text-align: left;
+	max-height: 54px;
 }
 
-.nav-container .text-muted {
-  margin: 18px 0;
+.nav_button {
+	display: inline-block;
+	margin-right: 40px;
+	transform: translateY(-130%);
 }
-.nav-container a {
-  color: #B11D1D;
-}
+
 .navbar-brand {
-    transform: translateY(-12%);
+	margin-left: 40px;
+}
+
+.navbar-right {
+	margin-right: 30px;
 }
 
 .navbar-static-top {
@@ -299,6 +302,7 @@
 }
 .navbar-default .navbar-nav > li > a {
   color: #886B6B;
+  display: inline;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #886B6B;
