@@ -51,7 +51,7 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background-color: rgba(50, 50, 100, 0.1);
+		background-color: rgba(50, 50, 100, 0.);
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
