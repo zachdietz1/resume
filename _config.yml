@@ -7,14 +7,14 @@ permalink: :title.html
 port: 4000
 safe: true
 url: http://zachdietz1.github.io/resume
-author: Zach M. Dietz
+author: Zach Dietz
 
 # edit this section with your information
 # biomadeira.github.io - all contents run on /vitae/
 # for a normal use at the base of the server change it to "/"
 baseurl: /resume/
 title: Zach Dietz's Resume
-name: Zach Dietz
+name: Zach M. Dietz
 email: zachdietz1@gmail.com
 email_full: mailto:zachdietz1@gmail.com
 website: zachdietz1.github.io/home
